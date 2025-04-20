@@ -7879,6 +7879,7 @@ header.header-bg {
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 10px;
+  color: var(--primary);
 }
 .tf-icon-box.style-border-line {
   border: 1px solid #ececec;
@@ -9991,7 +9992,7 @@ header.header-bg {
 }
 .card-product .card-product-wrapper {
   position: relative;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   overflow: hidden;
   z-index: 20;
   height: 300px;
