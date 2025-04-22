@@ -128,7 +128,29 @@
 .color-main-text-2 {
   --main:#253d4e;
 }
+/***************************************
+Scroll 
+***************************************/
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary); 
+  height: 100px;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main); 
+}
 /*---------- Reset css styles ----------- */
 html,
 body,
@@ -2155,6 +2177,9 @@ label {
 #header .box-nav-ul .item-link .icon {
   font-size: 7px;
 }
+#header .box-nav-ul li:hover .item-link{
+  color: var(--primary);
+}
 #header .box-nav-ul .item-link::before {
   content: "";
   width: 0;
@@ -2167,7 +2192,7 @@ label {
   -webkit-transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   -o-transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-  background: var(--main);
+  background: var(--primary);
 }
 #header .box-nav-ul li:hover .item-link::before {
   width: 100%;
@@ -3912,6 +3937,7 @@ header.header-bg {
   font-size: 24px;
   line-height: 28.8px;
   margin-top: 16px;
+  color: var(--primary);
 }
 .banner-hero-collection-wrap .card-box .text {
   margin-top: 20px;
@@ -4264,8 +4290,8 @@ header.header-bg {
 }
 
 .btn-fill {
-  background-color: var(--main);
-  border: 1px solid var(--main);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
   color: var(--white);
 }
 
@@ -4318,7 +4344,7 @@ header.header-bg {
 .btn-line {
   padding: 0;
   padding-bottom: 7px;
-  color: var(--main);
+  color: var(--primary);
   position: relative;
 }
 .btn-line .icon {
@@ -4333,7 +4359,7 @@ header.header-bg {
   bottom: 0;
   right: 0;
   height: 1px;
-  background-color: var(--main);
+  background-color: var(--primary);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -6049,13 +6075,17 @@ header.header-bg {
 }
 .hover-sw-nav .nav-sw.w_46 .icon {
   font-size: 12px;
+  color: var(--primary);
 }
 .hover-sw-nav .nav-sw.swiper-button-disabled {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .hover-sw-nav .nav-sw:hover:not(.swiper-button-disabled) {
-  background-color: var(--main);
+  background-color: var(--primary);
   color: var(--white);
+}
+.hover-sw-nav .nav-sw:hover .icon{
+  color: #fff;
 }
 .hover-sw-nav .nav-sw.style-2.swiper-button-disabled {
   opacity: 0.4;
@@ -10148,8 +10178,13 @@ header.header-bg {
   display: grid;
 }
 .card-product .card-product-info .title {
-  font-size: 16px;
-  line-height: 19.2px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary);
+  height: 38px;
+  height: 19px;
+  line-height: 19px;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   display: -webkit-box;
@@ -10174,6 +10209,8 @@ header.header-bg {
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 30px;
+  border-top: 1px solid rgb(0 104 98 / 10%);
+  text-align: center;
 }
 .card-product .countdown-box {
   position: absolute;
@@ -10650,6 +10687,7 @@ header.header-bg {
   gap: 8.5px;
   margin-top: 2px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .list-color-product .list-color-item {
   width: 26px;
@@ -10845,6 +10883,7 @@ header.header-bg {
   box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
   background-color: rgb(242, 242, 242);
   position: relative;
+  color: var(--primary);
 }
 .list-product-btn .box-icon .icon {
   font-size: 14px;
@@ -10880,7 +10919,7 @@ header.header-bg {
   border: 1px solid var(--line-2);
 }
 .list-product-btn .box-icon:hover {
-  background-color: var(--main) !important;
+  background-color: var(--primary) !important;
   color: var(--white);
 }
 .list-product-btn .box-icon:hover .tooltip {
@@ -13846,6 +13885,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 22px;
   line-height: 26.4px;
   color: var(--primary);
+  text-transform: capitalize;
 }
 .flat-title .sub-title {
   font-size: 14px;
