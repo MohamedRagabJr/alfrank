@@ -222,7 +222,7 @@
         const product = $(this);
         let showProduct = true;
   
-        const priceText = product.find(".current-price").text().replace("$", "");
+        const priceText = product.find(".current-price").text().replace("€", "");
         const price = parseFloat(priceText);
   
         if (price < filters.minPrice || price > filters.maxPrice) {
@@ -349,14 +349,14 @@
       if (sortValue === "price-low-high") {
         products.sort(
           (a, b) =>
-            parseFloat($(a).find(".current-price").text().replace("$", "")) -
-            parseFloat($(b).find(".current-price").text().replace("$", ""))
+            parseFloat($(a).find(".current-price").text().replace("€", "")) -
+            parseFloat($(b).find(".current-price").text().replace("€", ""))
         );
       } else if (sortValue === "price-high-low") {
         products.sort(
           (a, b) =>
-            parseFloat($(b).find(".current-price").text().replace("$", "")) -
-            parseFloat($(a).find(".current-price").text().replace("$", ""))
+            parseFloat($(b).find(".current-price").text().replace("€", "")) -
+            parseFloat($(a).find(".current-price").text().replace("€", ""))
         );
       } else if (sortValue === "a-z") {
         products.sort((a, b) =>

@@ -891,6 +891,9 @@ video {
 .bg_grey-16 {
   background-color: rgb(0 104 98 / 10%) !important;
 }
+.bg_grey-17 {
+  background-color: rgb(0 104 98 / 4%) !important;
+}
 
 .bg_dark-grey {
   background-color: #808080;
@@ -1079,7 +1082,9 @@ video {
 .bg_mint {
   background: #cfdfd6;
 }
-
+.bg_main-2{
+  background-color: var(--primary);
+}
 .bg_fef4e8 {
   background-color: #fef4e8;
 }
@@ -2917,7 +2922,7 @@ header.header-bg {
 }
 .footer .footer-wrap .footer-bottom .footer-bottom-wrap {
   padding-top: 21px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgb(0 104 98 / 30%);
   padding-bottom: 20px;
 }
 .footer .footer-wrap .footer-bottom .footer-bottom-wrap .footer-menu_item {
@@ -2932,7 +2937,8 @@ header.header-bg {
   line-height: 22.4px;
 }
 .footer .footer-logo {
-  margin-bottom: 30px;
+  align-content: center;
+    height: 225px;
 }
 .footer .footer-logo img{
   width: 200px;
@@ -2971,7 +2977,6 @@ header.header-bg {
 }
 .footer .footer-newsletter form {
   margin-top: 27px;
-  margin-bottom: 40px;
   position: relative;
 }
 .footer .footer-newsletter form input {
@@ -3085,7 +3090,7 @@ header.header-bg {
   background-color: #214332;
 }
 .footer.background-gray {
-  background-color: #F6F6F6;
+  background-color: rgb(0 104 98 / 10%) !important;
 }
 .footer.background-gray .footer-body::before {
   content: none;
@@ -9585,7 +9590,7 @@ header.header-bg {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: #eb001b;
+  background-color: var(--primary);
   border-radius: 3px;
 }
 .tf-progress-bar .progress-car {
@@ -9595,8 +9600,8 @@ header.header-bg {
   transform: translateY(-50%);
   width: 36px;
   height: 26px;
-  color: #eb001b;
-  border: 1px solid #eb001b;
+  color: var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 2.5px;
   background-color: var(--white);
   display: flex;
@@ -11891,10 +11896,6 @@ blockquote .text {
 
 .tf-page-title {
   padding: 69px 0 65px;
-  background-image: url(../images/shop/file/page-title-blog.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .tf-page-title .heading {
   font-size: 42px;
@@ -13358,9 +13359,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .tf-pagination-list .active .pagination-link {
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px 0px;
-  background-color: var(--main);
+  background-color: var(--primary);
   color: var(--white);
-  border-color: var(--main);
+  border-color: var(--primary);
 }
 
 .widget-facet {
@@ -16215,7 +16216,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   align-items: center;
   gap: 15px;
 }
-
+.box-invoice .wrap-top img{
+  max-width: 300px;
+}
 .box-invoice .box-left {
   width: 60%;
 }
